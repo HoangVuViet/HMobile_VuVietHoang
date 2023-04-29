@@ -1,0 +1,12 @@
+body{
+    background-image: url(../img/backgroudn.jpg);
+}
+.nav-item:hover{
+    color: aqua;
+}
+#Searchbut{
+    border-radius: 3px;
+}
+#mtb a p:hover{
+    color: aqua;
+}
