@@ -10,3 +10,10 @@ body{
 .tel button{
     border-radius: 4px;
 }
+.it1 a{
+    text-decoration: none;
+    color: black;
+}
+.it1 a:hover{
+    text-decoration: none;
+}
