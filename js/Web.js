@@ -57,4 +57,24 @@ function kttk(){
     return false;
 }
 
+function ktpass() {
+    let pass = document.getElementById('password').value;
+    let pattern = /^[A-Za-z0-9!@#$%^&*()]{10,}$/;
+        if (pattern.test(pass)){
+            document.getElementById('erpassword').innerHTML="*";
+            return true;
+        }else
+            document.getElementById('erpassword').innerHTML="Invalid Password";
+            return false; 
+}
+function ktrepass() {
+    let pass = document.getElementById('password').value;
+    let repass = document.getElementById('repassword').value;
+        if ( pass == repass){
+            document.getElementById('errepassword').innerHTML="*";
+            return true;
+        }else   
+            document.getElementById('errepassword').innerHTML="mat khau k trung` nhau";
+            return false;
 
+}

@@ -89,5 +89,144 @@
 <a href="#" data-target="#formdn" data-toggle="modal">Đăng Nhập</a>
 </div>
 </nav>
+
+
+
+
+
+
+
+
+
+<!-- Tạo modal đâng nhập -->
+<div class="modal" id="formdn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h4 class="text-info">
+                        THÔNG TIN ĐĂNG NHẬP
+                    </h4>
+                    <button class="btn close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                <div class="row">
+                    <label for="" class="col-3"> Tài Khoản</label>
+                    <div class="col-9"> 
+                        <input type="text" class="form-control" id="taikhoan" placeholder="Tên đăng nhập" >
+                        <span class="text-danger" id="ertk">(*)</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="" class="col-3"> Mật khẩu</label>
+                    <div class="col-9"> 
+                        <input type="text" class="form-control" id="pass" placeholder="Mật khẩu" >
+                        <span class="text-danger" id="ermk">(*)</span>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="button" value="Xác nhận" class="btn btn-success ">
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                    <p class="col-12 text-center">Nếu chưa có tài khoản bấm vào <a href="#" data-dismiss="modal" data-target="#formdk" data-toggle="modal">đây</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- tạo modal dăng ký -->
+<div class="modal" id="formdk">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="text-info">
+                    THÔNG TIN ĐĂNG KÝ TÀI KHOẢN
+                </h4>
+                <button class="btn close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <label for="" class="col-3">Họ và Tên</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="hoten" placeholder="Ho va ten..." onblur="kthoten()">
+                        <span id="erhoten" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Email</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="email" placeholder="Email..." onblur="ktemail();">
+                        <span id="eremail" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">SĐT</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="sdt" placeholder="SĐT" onblur="ktsdt();">
+                        <span id="ersdt" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Ngày sinh</label>
+                        <div class="col-9">
+                        <input type="date" class="form-control" id="date" onblur="ktdate();">
+                        <span id="erdate" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Tên Đăng Nhập</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="tdn" onblur="kttk();">
+                        <span id="ertdn" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Mật Khẩu</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="password" onblur="ktpass();">
+                        <span id="erpassword" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Xác Nhận Mật Khẩu</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="repassword" onblur="ktrepass();">
+                        <span id="errepassword" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="row form-group">
+                        <label for="" class="col-3 text-right">Gioi tinh</label>
+                        <div class="col-9">
+                            <input type="radio" name='gioitinh'> Nam
+                            <input type="radio" name='gioitinh'> Nu
+
+                        </div>
+                    </div>
+                    
+                    </div>
+                        <div class="row form-group">
+                            <div class="col-12 text-center">
+                                <input type="button" class="btn btn-success" value="Dang ky" onclick="ketqua();">
+                                <input type="reset" class="btn btn-dark" value="Reset">
+                            </div>
+                        </div>
+
+                </form>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-danger" data-dismiss="modal" value="Huỷ">
+                        </div>
+            </div>
+            
+        </div>
+    </div>
 </body>
 </html>
