@@ -1,5 +1,6 @@
 body{
     background-image: url(../img/backgroudn.jpg);
+    overflow-x: hidden;
 }
 #tt{
     line-height: 15px;
@@ -16,4 +17,7 @@ body{
 }
 .it1 a:hover{
     text-decoration: none;
+}
+.bangcauhinh tr th{
+    font-weight: normal;
 }
