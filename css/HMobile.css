@@ -21,3 +21,10 @@ body{
 .bangcauhinh tr th{
     font-weight: normal;
 }
+#tintuc a{
+    text-decoration: none;
+}
+#tintucY h4,p:hover{
+    text-decoration: aqua;
+    color: aqua;
+}
