@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/HMobile.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="shortcut icon" href="../img/logo.png" >
+    <title>Iphone X</title>
+</head>
+<body>
+     <!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-light bg-dark ">
+
+    <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" style="height: 40px;"></a>
+
+    <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+
+    <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+<div class="collapse navbar-collapse justify-content-between" id="nav">
+
+    <ul class="navbar-nav">
+
+        <li class="nav-item" >
+
+             <a class="nav-link text-light font-weight-bold px-3" href="../index.html">TRANG CHỦ</a>
+
+        </li>
+
+        <li class="nav-item" >
+
+            <a class="nav-link text-light font-weight-bold px-3 " href="DienThoai.html">ĐIỆN THOẠI</a>
+
+                <!-- <div class="dropdown-menu">
+
+                    <a class="dropdown-item" href="#">Fast Food</a>
+
+                    <a class="dropdown-item" href="#">Lunch</a>
+
+
+                </div> -->
+
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link text-light font-weight-bold px-3" href="MayTinhBang.html">MÁY TÍNH BẢNG</a>
+
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link text-light font-weight-bold px-3" href="Tintuc.html">TIN TỨC</a>
+
+        </li>
+
+        <li class="nav-item">
+
+            <a class="nav-link text-light font-weight-bold px-3" href="about us.html">ABOUT US</a>
+
+        </li>
+
+        
+
+    </ul>
+
+
+<!-- Search bar -->
+
+<form class="form-inline ml-3">
+
+    <div class="input-group">
+
+        <input type="text" class="form-control " placeholder="Search" >
+
+        <button type="submit"><i class="fa fa-search"></i>Go</button>
+
+    </div>
+
+</form>
+<a href="#" data-target="#formdn" data-toggle="modal" id="btnDemo1">Đăng Nhập</a>
+    <div id="thongtincanhan" style="display: none;" >
+        <ul>
+            <li style="list-style-type: none;" > <a style="color: white;" href="../html/thongtincanhan.html"> Thông tin</a></li>
+            <li style="list-style-type: none;" id="dangxuat" onclick="dangxuat()"> <p class="text-white">Đăng xuất</p></li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<div class="container p-5 mt-3" id="tt" style="background-color:white; border-radius: 4px;">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="main" style="width: 350px;">
+                <img src="../img/ip10.png" alt="iphone X" srcset="" style="width: 330px; padding-top: 30px; padding-left: 10px;">
+            </div>
+        </div>
+        <div class="col-md-3 pl-5 pt-4">
+            
+            <h4>Tên sản phẩm: </h4><br>
+            <p2>Hãng sản xuất:</p2><br><br>
+            <p2>Năm sản xuất:</p2><br><br>
+            <p2>Xuất xứ</p2><br><br>
+            <p2>Bảo hành:</p2><br><br>
+            <p2>Tình trạng sản phẩm: </p2><br><br>
+            <h4>Giá gốc:</h4><br>
+            <h4>Giá khuyến mãi:</h4><br><br>
+            <a class="tel" href="tel:0123456789">
+                <button type="submit">
+                    <h5>Liên hệ đặt hàng:<br>
+                    0123.456.789</h5>
+                </button>
+            </a>
+        </div>
+        <div class="col-md-5 pl-5  pt-4">
+           
+            <h4>Apple Iphone X</h4><br>
+            <a href="https://www.apple.com/vn/" style="text-decoration: none;"><p2>Apple</p2></a><br><br>
+            <p2>2020</p2><br><br>
+            <p2>Chính hãng </p2><br><br>
+            <p2>24 tháng</p2><br><br>
+            <p2>Mới 100%, Fullbox</p2><br><br>
+            <h4 style="text-decoration: line-through; color: grey;">10.990.000 VND</h4><br>
+            <h4 style="color: red;">9.999.000 VND</h4><br>
+            <h4>Hoặc liên hệ qua mạng xã hội:</h4>
+            <a href="http://facebook.com">
+                <img src="../img/fb icon.png" alt="" srcset="" style="height: 80px;">
+            </a>
+            <a href="http://chat.zalo.me">
+                <img src="../img/zalo logo.png" alt="" srcset="" style="height: 70px;">
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 justify-content-center text-center" style="line-height: 20px;">
+            <h4>Mô tả sản phẩm:</h4>
+            <p>Các smartphone từ thương hiệu Apple luôn thu hút đông đảo người tiêu dùng không chỉ bởi hiệu năng cực kỳ ấn tượng của chip A14 Bionic, 
+                thiết kế sang trọng và màn hình chất lượng cũng khiến những người dùng khó tính nhất cũng phải sẵn sàng “rước” máy về cho riêng mình. 
+                Thì nay, phiên bản iPhone X tuyệt đẹp, dự báo sẽ cháy hàng trong thời gian sắp tới.</p><br><br>
+            <h4>Một số sản phẩm khác:</h4><br>
+            <div class="box" style="border: 1px solid black; border-radius: 4px;">
+                <a href="../html/S20FE.html" style="text-decoration: none; list-style: none;">
+                    <table>
+                        <tr>
+                            <th>
+                                <img class="text-left p-3" src="../img/new3.png" alt="" srcset="" style="height: 200px;">
+                            </th>
+                            <th class="pl-5">
+                                Samsung Galaxy S20 FE<br><br>
+                                <p style="text-decoration: line-through; color: grey;">17.990.000 VND</p>
+                                <p style="color: red;">13.990.000 VND</p>
+                            </th>
+                        </tr>
+                    </table>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <h5>Cấu hình điện thoại Apple Iphone X (3GB/256GB):</h5>
+            <table class="bangcauhinh justify-content-center ml-4" style="line-height: 18px;">
+                <tr>
+                    <th>Màn hình:</th>
+                    <th class="ttphai text-right" style="padding-left: 130px;" >5,8 in (150 mm) Super Retina HD: OLED</th>
+                </tr>
+                <tr>
+                    <th>Hệ điều hành:</th>
+                    <th class="ttphai text-right">iOS 15</th>
+                </tr>
+                <tr>
+                    <th>Camera trước:</th>
+                    <th class="ttphai text-right">12 MP</th>
+                </tr>
+                <tr>
+                    <th>Camera sau:</th>
+                    <th class="ttphai text-right">2 camera 12 MP </th>
+                </tr>
+                <tr>
+                    <th>Chip:</th>
+                    <th class="ttphai text-right">Apple A14 Bionic</th>
+                </tr>
+                <tr>
+                    <th>RAM:</th>
+                    <th class="ttphai text-right">3 GB</th>
+                </tr>
+                <tr>
+                    <th>Dung lượng lưu trữ:</th>
+                    <th class="ttphai text-right">256 GB</th>
+                </tr>
+                <tr>
+                    <th>SIM:</th>
+                    <th class="ttphai text-right">1 Nano SIM & 1 eSIM, Hỗ trợ 5G</th>
+                </tr>
+                <tr>
+                    <th>Pin, Sạc:</th>
+                    <th class="text-right">2716 mAh20 W</th>
+                </tr>
+            </table><br>
+            <h4 class="text-center">Ưu đãi khi mua hàng tại HMobile:</h4>
+            <table>
+                <tr>
+                    <th>
+                        <img src="../img/co le.png" alt="" srcset="" style="height: 100px;">
+                    </th>
+                    <th class="">Dịch vụ, sửa chữa, bảo hành tận tâm</th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="../img/ho tro.png" alt="" srcset="" style="height: 70px; padding-left: 15px;">
+                    </th>
+                    <th>Tư vấn viên hỗ trợ online 24/7</th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="../img/tich xanh.png" alt="" srcset="" style="height: 70px; padding-left: 15px;">
+                    </th>
+                    <th>Cài đặt phần mềm, vệ sinh máy miễn phí khi mua hàng</th>
+                </tr>
+                <tr>
+                    <th>
+                        <img src="../img/cau hoi.png" alt="" srcset="" style="height: 70px; padding-left: 15px;">
+                    </th>
+                    <th>Luôn lắng nghe ý kiến đóng góp của quý khách hàng</th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+<footer class="row text-center p-3 mt-3" style="background-color: black;">
+    <div class="col-md-5">
+        <h3 class="text-white">Liên Hệ Chúng Tôi:</h3>
+        <a href="tel:0123456789" style="text-decoration: none;color: rgb(253, 253, 253);">Tel: 012.3456.789</a><br>
+        <p2 class="text-white">1 Nguyễn Văn Bảo Phường 5 Gò Vấp</p2>
+    </div>
+    <div class="col-md-4">
+        <a class="text-white" href="#">Chính Sách Bảo Hành</a><br>
+        <a class="text-white" href="#">Tin Tức</a><br>
+        <a class="text-white" href="#">Tuyển Dụng</a><br>
+        <a class="text-white" href="#">Góp Ý, Khiếu Nại</a>
+    </div>
+    <div class="col-md-3">
+        <a href="https://www.facebook.com/" >
+             <img src="../img/fb icon.png" style="height: 70px;">
+        </a>
+    </div>
+</footer>
+</div>
+
+
+<!-- Tạo modal đâng nhập -->
+<div class="modal" id="formdn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h4 class="text-info">
+                        THÔNG TIN ĐĂNG NHẬP
+                    </h4>
+                    <button class="btn close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                <div class="row">
+                    <label for="" class="col-3"> Tài Khoản</label>
+                    <div class="col-9"> 
+                        <input type="text" class="form-control" id="taikhoan" placeholder="Tên đăng nhập" >
+                        <span class="text-danger" id="ertk">(*)</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="" class="col-3"> Mật khẩu</label>
+                    <div class="col-9"> 
+                        <input type="password" class="form-control" id="pass" placeholder="Mật khẩu" >
+                        
+                        <span class="text-danger" id="ermk">(*)</span>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="button" value="Xác nhận" class="btn btn-success" id="btnSignIn" onclick="xacnhan()">
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                    <p class="col-12 text-center">Nếu chưa có tài khoản bấm vào <a href="#" data-dismiss="modal" data-target="#formdk" data-toggle="modal">đây</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- tạo modal dăng ký -->
+<div class="modal" id="formdk">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="text-info">
+                    THÔNG TIN ĐĂNG KÝ TÀI KHOẢN
+                </h4>
+                <button class="btn close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <label for="" class="col-3">Họ và Tên</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="hoten" placeholder="Ho va ten..." onblur="kthoten()">
+                        <span id="erhoten" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Email</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="email" placeholder="Email..." onblur="ktemail();">
+                        <span id="eremail" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">SĐT</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="sdt" placeholder="SĐT" onblur="ktsdt();">
+                        <span id="ersdt" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Ngày sinh</label>
+                        <div class="col-9">
+                        <input type="date" class="form-control" id="date" onblur="ktdate();">
+                        <span id="erdate" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Tên Đăng Nhập</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="tdn" onblur="kttk();">
+                        <span id="ertdn" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Mật Khẩu</label>
+                        <div class="col-9">
+                        <input type="password" class="form-control" id="password" onblur="ktpass();">
+                        <span id="erpassword" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Xác Nhận Mật Khẩu</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="repassword" onblur="ktrepass();">
+                        <span id="errepassword" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="row form-group">
+                        <label for="" class="col-3 text-right">Gioi tinh</label>
+                        <div class="col-9">
+                            <input type="radio" name='gioitinh'> Nam
+                            <input type="radio" name='gioitinh'> Nu
+
+                        </div>
+                    </div>
+                    
+                    </div>
+                        <div class="row form-group">
+                            <div class="col-12 text-center">
+                                <input type="button" class="btn btn-success" value="Dang ky" onclick="ketqua();">
+                                <input type="reset" class="btn btn-dark" value="Reset">
+                            </div>
+                        </div>
+
+                </form>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-danger" data-dismiss="modal" value="Huỷ">
+                        </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="../js/Web.js"></script>
+</html>

@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/HMobile.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/Web.js"></script>
-
+    <link rel="stylesheet" href="../css/HMobile.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="shortcut icon" href="../img/logo.png" >
     <title>Trang Chủ</title>
 </head>
 
@@ -17,7 +16,7 @@
      <!-- navbar -->
      <nav class="navbar navbar-expand-md navbar-light bg-dark ">
 
-        <a href="#" class="navbar-brand"><img src="img/logo.png" style="height: 40px;"></a>
+        <a href="#" class="navbar-brand"><img src="../img/logo.png" style="height: 40px;"></a>
     
         <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
     
@@ -30,46 +29,23 @@
         <ul class="navbar-nav">
     
             <li class="nav-item" >
-    
                  <a class="nav-link text-light font-weight-bold px-3" href="#">TRANG CHỦ</a>
-    
             </li>
     
             <li class="nav-item" >
-    
                 <a class="nav-link text-light font-weight-bold px-3 " href="html/DienThoai.html">ĐIỆN THOẠI</a>
-    
-                    <!-- <div class="dropdown-menu">
-    
-                        <a class="dropdown-item" href="#">Fast Food</a>
-    
-                        <a class="dropdown-item" href="#">Lunch</a>
-    
-    
-                    </div> -->
-    
             </li>
             <li class="nav-item">
-    
                 <a class="nav-link text-light font-weight-bold px-3" href="html/MayTinhBang.html">MÁY TÍNH BẢNG</a>
-    
             </li>
             <li class="nav-item">
-    
                 <a class="nav-link text-light font-weight-bold px-3" href="html/Tintuc.html">TIN TỨC</a>
-    
             </li>
-    
             <li class="nav-item">
-    
                 <a class="nav-link text-light font-weight-bold px-3" href="html/about us.html">ABOUT US</a>
-    
             </li>
-    
             <li class="nav-item">
-    
-                <a class="nav-link text-light font-weight-bold px-3" href="html/site map.html">SITEMAP</a>
-    
+                <a class="nav-link text-light font-weight-bold px-3" href="html/site map.html">SITE MAP</a>
             </li>
     
         </ul>
@@ -83,126 +59,196 @@
     
             <input type="text" class="form-control " placeholder="Search" >
     
-            <button type="submit"><i class="fa fa-search"></i>Go</button>
+            <button type="submit"><i class="fa fa-search"></i>Tìm kiếm</button>
     
         </div>
     
     </form>
-    <a href="#" data-target="#formdn" data-toggle="modal">Đăng Nhập</a>
+    <button id="cart">
+        <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        <a href="#" data-target="#myModal" data-toggle="modal">Giỏ Hàng</a>
+    </button>
+    <a href="#" data-target="#formdn" data-toggle="modal" id="btnDemo1">Đăng Nhập</a>
+    <div id="thongtincanhan" style="display: none;" >
+        <ul >
+            <li style="list-style-type: none;" > <a style="color: white;" href="../html/thongtincanhan.html"> Thông tin</a></li>
+            <li style="list-style-type: none;" id="dangxuat" onclick="dangxuat()"><a class="text-white" href="TrangChu.html">Đăng xuất</a>/</li>
+        </ul>
+    </div>
+
     </div>
     </nav>
-    
 
-    <div class="container mt-5 p-4" style="background-color: white; border-radius: 20px;" >
-        <h4 style="color: red;">Khuyến mãi đang thịnh hành:</h4>
+  <!-- content   -->
+<div class="container mt-5" >
+    
+    <!-- <div class="container-fluid"> -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="img/banner1.jpg" style="height: 570px;" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/banner2.jpg" style="height: 570px;" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/banner3.jpg" style="height: 570px;" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../img/banner1.jpg" alt="First slide">
           </div>
-    </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../img/banner2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../img/banner3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <!-- </div> -->
+    
+</div>
+  
 
 <div class="container my-5">
     <div class="row bg-white" style="border-radius: 20px;padding-top: 30px;padding-bottom: 30px;">
-        <div class="it1 col-4 text-center justify-content-center">
+        <div class="main-product col-4 text-center justify-content-center">
             <a href="html/Iphone12Mini.html">
-                <img id="h1" src="img/new1.png" style="height: 300px;">
-                <br><br>
-                <h5>Apple Iphone 12 Mini (Tím)</h5>
-                <p2  style="text-decoration: line-through; color: grey;">11.990.990 VNĐ</p2><br>
-                <p2 style="color: red;" >9.990.000 VNĐ</p2>
+                <div class="img-product">
+                    <img class="img-prd1" id="h1" src="img/new1.png" style="height: 300px;">
+                </div>
+                <br>
+                <div class="content-product">
+                    <h5 class="content-product-h5">Apple Iphone 12 Mini (Tím)</h5>
+                    <div class="content-product-detail">
+                        <p2  style="text-decoration: line-through; color: grey;">17.990.990 VNĐ</p2><br>
+                        <p2 style="color: red;" >13.900.000 VNĐ</p2>
+                        <div class="price">
+                            <span class="money" style="color: red;display: none;">13900000đ</span>
+                        </div><br>
+                    </div>
+
+                </div>
             </a>
+            <button type="button" class="btn btn-cart" onclick="addItemToCart('Apple Iphone 12 Mini (Tím)',13900000,'img/new1.png');updatecart()">Thêm Vào Giỏ</button>
         </div>
-        <div class="it1 col-4 text-center justify-content-center">
-            <a href="html/S20FE.html">
-                <img id="h2" style="height: 300px;width: 300px;" src="img/new3.png" >
-                <br><br>
-                <h5>SamSung Galaxy S20 FE</h5>
-                <p2 style="text-decoration: line-through; color: grey;">11.990.990 VNĐ</p2><br>
-                <p2 style="color: red;">9.990.000 VNĐ</p2>
+        <div class="main-product col-4 text-center justify-content-center">
+            <a href="html/S20FE.html"> 
+                <div class="img-product">
+                    <img id="h2" style="height: 300px;width: 300px;" src="img/new3.png" >
+                </div>
+                <br>
+                <div class="content-product">
+                    <h5>SamSung Galaxy S20 FE</h5>
+                    <p2 style="text-decoration: line-through; color: grey;">13.990.990 VNĐ</p2><br>
+                    <p2 style="color: red;" >10.000.000 VNĐ</p2>
+                    <div class="price">
+                        <span class="money" style="color: red; display: none;">10000000đ</span>
+                    </div><br>
+                </div>
             </a>
+            <button type="button" class="btn btn-cart" onclick="addItemToCart('SamSung Galaxy S20 FE',10000000,'img/new3.png');updatecart()">Thêm Vào Giỏ</button>
         </div>
-        <div class="it1 col-4 text-center justify-content-center">
+
+        <div class="main-product col-4 text-center justify-content-center">
             <a href="html/S23.html">
-                <img id="h3"  src="img/new2.png" style="height: 300px;width: 300px; " >
-                <br><br>
-                <h5>SamSung Galaxy A23</h5>
-                <p2 style="text-decoration: line-through; color: grey;">11.990.990 VNĐ</p2><br>
-                <p2 style="color: red;">9.990.000 VNĐ</p2>
+                <div class="img-product">
+                    <img id="h3"  src="img/new2.png" style="height: 300px;width: 300px; " >
+                </div>
+                <br>
+                <div class="content-product">
+                    <h5>SamSung Galaxy A23</h5>
+                    <p2 style="text-decoration: line-through; color: grey;">16.990.990 VNĐ</p2><br>
+                    <p2 style="color: red;" >12.500.000 VNĐ</p2>
+                    <div class="price">
+                        <span class="money" style="color: red;display: none;">12500000đ</span>
+                    </div><br>
+                </div>
             </a>
+            <button type="button" class="btn btn-cart" onclick="addItemToCart('SamSung Galaxy A23',12500000,'img/new2.png');updatecart()">Thêm Vào Giỏ</button>
         </div>
     </div>
 </div>
 
+    </div>
+<!-- </div> -->
+
 <div class="container my-5">
     <div class="row bg-white" style="border-radius: 20px; padding-bottom: 30px; padding-top: 30px;" >
-        <div class="it1 col-4 text-center justify-content-center" id="mtb1">
+        <div class="main-product col-md-4 text-center justify-content-center" id="mtb1">
             <a href="html/Ipad Pro 2020.html">
-                <img id="h1" src="img/newmt4.png" style="height: 300px;width: 250px;">
-                <br><br>
-                <h5 >Apple Ipad Pro 2020</h5>
-                <p2  style="text-decoration: line-through; color: grey;">11.990.990 VNĐ</p2><br>
-                <p2 style="color: red;" >9.990.000 VNĐ</p2>
+                <div class="img-product">
+                    <img id="h3"  src="img/newmt4.png" style="height: 300px;width: 300px; " >
+                </div>
+                <br>
+                <div class="content-product">
+                    <h5>Apple Ipad Pro 2020</h5>
+                    <p2 style="text-decoration: line-through; color: grey;">15.990.990 VNĐ</p2><br>
+                    <p2 style="color: red;" >14.500.000 VNĐ</p2>
+                    <div class="price">
+                        <span class="money" style="color: red;display: none;">14500000đ</span>
+                    </div><br>
+                </div>
             </a>
+            <button type="button" class="btn btn-cart" onclick="addItemToCart('Apple Ipad Pro 2020',14500000,'img/newmt4.png');updatecart()">Thêm Vào Giỏ</button>
         </div>
-        <div class="it1 col-4 text-center justify-content-center" id="mtb">
-            <a href="html/IpadGen8.html">
-                <img id="h2" style="height: 300px;width: 250px;" src="img/newmt2 - Copy.png" >
-                <br><br>
-                <h5>Apple Ipad Gen 8</h5>
-                <p2 style="text-decoration: line-through; color: grey;">11.990.990 VNĐ</p2><br>
-                <p2 style="color: red;">9.990.000 VNĐ</p2>
-            </a>
-        </div>
-        <div class="it1 col-4 text-center justify-content-center">
+        <div class="main-product col-md-4 text-center justify-content-center" id="mtb">
             <a href="html/TabA7Lite.html">
-                <img id="h3"  src="img/newmt3-2.png" style="height: 300px;width: 270px;" >
-                <br><br>
-                <h5>SamSung Galaxy Tab A7 Lite</h5>
-                <p2 style="text-decoration: line-through; color: grey;">11.990.990 VNĐ</p2><br>
-                <p2 style="color: red;">9.990.000 VNĐ</p2>
+                <div class="img-product">
+                    <img id="h3"  src="img/newmt3-2.png" style="height: 300px;width: 300px; " >
+                </div>
+                <br>
+                <div class="content-product">
+                    <h5>Samsung Tab A7 Lite</h5>
+                    <p2 style="text-decoration: line-through; color: grey;">9.990.990 VNĐ</p2><br>
+                    <p2 style="color: red;" >6.990.000 VNĐ</p2>
+                    <div class="price">
+                        <span class="money" style="color: red;display: none;">6990000đ</span>
+                    </div><br>
+                </div>
             </a>
+            <button type="button" class="btn btn-cart" onclick="addItemToCart('Samsung Tab A7 Lite',6990000,'img/newmt4.png');updatecart()">Thêm Vào Giỏ</button>
+        </div>
+        <div class="main-product col-md-4 text-center justify-content-center">
+            <a href="html/IpadGen8.html">
+                <div class="img-product">
+                    <img id="h3"  src="img/newmt2 - Copy.png" style="height: 300px;width: 280px; " >
+                </div>
+                <br>
+                <div class="content-product">
+                    <h5>Apple Ipad Pro 2020</h5>
+                    <p2 style="text-decoration: line-through; color: grey;">15.990.990 VNĐ</p2><br>
+                    <p2 style="color: red;" >12.000.000 VNĐ</p2>
+                    <div class="price">
+                        <span class="money" style="color: red;display: none;">12000000đ</span>
+                    </div><br>
+                </div>
+            </a>
+            <button type="button" class="btn btn-cart" onclick="addItemToCart('Apple Ipad Gen 8',120000000,'img/newmt2 - Copy.png');updatecart()">Thêm Vào Giỏ</button>
         </div>
     </div>
 </div>
 
 <!-- Footer -->
-    <footer class="row text-center p-3" style="background-color: black; margin-bottom: -50px; padding-bottom: 30px; padding-top: 30px;">
-        <div class="col-5">
+    <footer class="row text-center " style="background-color: black; margin-bottom: -50px; padding-bottom: 30px; padding-top: 30px;">
+        <div class="col-md-5">
             <h3 class="text-white">Liên Hệ Chúng Tôi:</h3>
             <a href="tel:0123456789" style="text-decoration: none;color: rgb(253, 253, 253);">Tel: 012.3456.789</a><br>
             <p2 class="text-white">1 Nguyễn Văn Bảo Phường 5 Gò Vấp</p2>
         </div>
-        <div class="col-4">
+        <div class="col-md-4">
             <a class="text-white" href="#">Chính Sách Bảo Hành</a><br>
-            <a class="text-white" href="html/Tintuc.html">Tin Tức</a><br>
+            <a class="text-white" href="#">Tin Tức</a><br>
             <a class="text-white" href="#">Tuyển Dụng</a><br>
             <a class="text-white" href="#">Góp Ý, Khiếu Nại</a>
         </div>
-        <div class="col-3">
+        <div class="col-md-3">
             <a href="https://www.facebook.com/" >
-                 <img src="img/fb icon.png" style="height: 70px;">
+                 <img src="../img/fb icon.png" style="height: 70px;">
             </a>
         </div>
     </footer>
@@ -230,12 +276,13 @@
                 <div class="row">
                     <label for="" class="col-3"> Mật khẩu</label>
                     <div class="col-9"> 
-                        <input type="text" class="form-control" id="pass" placeholder="Mật khẩu" >
+                        <input type="password" class="form-control" id="pass" placeholder="Mật khẩu" >
+                        
                         <span class="text-danger" id="ermk">(*)</span>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <input type="button" value="Xác nhận" class="btn btn-success ">
+                    <input type="button" value="Xác nhận" class="btn btn-success" id="btnSignIn" onclick="xacnhan()">
                 </div>
             </form>
             </div>
@@ -300,7 +347,7 @@
                     <div class="row form-group">
                         <label for="" class="col-3">Mật Khẩu</label>
                         <div class="col-9">
-                        <input type="text" class="form-control" id="password" onblur="ktpass();">
+                        <input required title="password must containt at least 1 uppercase, lowercase and number!" type="password" class="form-control" id="password" onblur="ktpass();">
                         <span id="erpassword" class="text-danger">(*)</span>
                         </div>
                     </div>
@@ -308,7 +355,7 @@
                     <div class="row form-group">
                         <label for="" class="col-3">Xác Nhận Mật Khẩu</label>
                         <div class="col-9">
-                        <input type="text" class="form-control" id="repassword" onblur="ktrepass();">
+                        <input type="password" class="form-control" id="repassword" onblur="ktrepass();">
                         <span id="errepassword" class="text-danger">(*)</span>
                         </div>
                     </div>
@@ -325,7 +372,7 @@
                     </div>
                         <div class="row form-group">
                             <div class="col-12 text-center">
-                                <input type="button" class="btn btn-success" value="Dang ky" onclick="ketqua();">
+                                <input type="button" data-dismiss="modal" class="btn btn-success" value="Dang ky" onclick="ketqua();">
                                 <input type="reset" class="btn btn-dark" value="Reset">
                             </div>
                         </div>
@@ -338,5 +385,34 @@
             
         </div>
     </div>
+    <!-- cart -->
+    <div id="myModal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <div class="modal-header" id="modal-header">
+                <h5 class="modal-title">Giỏ Hàng</h5>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                    <span class="cart-price cart-header cart-column">Giá</span>
+                    <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                </div>
+                <div class="cart-items" id="cart-items">
+                    
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Tổng Cộng:</strong>
+                    <span class="cart-total-price">0 VND</span>
+                </div>
+            </div>
+    
+            <div class="modal-footer" id="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-secondary close-footer">Đóng</button>
+                <button type="button" class="btn btn-primary order">Thanh Toán</button>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="../js/Web.js"></script>
 </html>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/bootstrap.js"></script>
-    <script src="../js/Web.js"></script>
+    <link rel="shortcut icon" href="../img/logo.png" >
     <title>Điện Thoại</title>
 </head>
 <body>
@@ -63,12 +63,12 @@
             <a class="nav-link text-light font-weight-bold px-3" href="about us.html">ABOUT US</a>
 
         </li>
-
         <li class="nav-item">
-
+    
             <a class="nav-link text-light font-weight-bold px-3" href="site map.html">SITEMAP</a>
 
         </li>
+      
 
     </ul>
 
@@ -81,72 +81,201 @@
 
         <input type="text" class="form-control " placeholder="Search" >
 
-        <button type="submit"><i class="fa fa-search"></i>Go</button>
+        <button type="submit"><i class="fa fa-search"></i>Tìm kiếm</button>
 
     </div>
 
 </form>
-<a href="#" data-target="#formdn" data-toggle="modal">Đăng Nhập</a>
+<button id="cart">
+    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+    <a href="#" data-target="#myModal" data-toggle="modal">Giỏ Hàng</a>
+</button>
+<a href="#" data-target="#formdn" data-toggle="modal" id="btnDemo1">Đăng Nhập</a>
+    <div id="thongtincanhan" style="display: none;" >
+        <ul>
+            <li style="list-style-type: none;" > <a style="color: white;" href="../html/thongtincanhan.html"> Thông tin</a></li>
+            <li style="list-style-type: none;" id="dangxuat" onclick="dangxuat()"> <p class="text-white">Đăng xuất</p></li>
+        </ul>
+    </div>
 </div>
 </nav>
 
+<!-- content -->
+<div class="container mt-5 " >
+    <div class="row">     
+        <div class="col-md-7 bg-white" style="background-image: url(../img/banner\ mtbang.webp); height: 550px;">
+        
+        </div>
+        <div class="col-md-5 bg-white">
+            <div class="row" style="width: 200px; border-radius: 0px 10px 10px 0px; background-color: brown;">
+                <h5 class="pl-3 pt-1">TIN CÔNG NGHỆ</h5>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <a href="../html/Tintuc.html">
+                        <img src="../img/news dt.jpg" alt="" style="height: 171px; margin-left: -15px;">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="../html/Tintuc.html">
+                    <p class="text-center text-danger pt-5">Top 5 Máy Tính Bảng Tốt Nhất 2022 theo EWC</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <a href="../html/Tintuc.html">
+                        <img src="../img/news mtbang1.png" alt="" style="height: 171px; margin-left: -15px;">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="../html/Tintuc.html">
+                    <p class="text-center text-danger pt-4">
+                        Những Chiếc Điện Thoại Ra Mắt Cuối Năm 2022 Đáng Chờ Đợi Nhất</p>
+                    </a>
+                </div>
+    
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <a href="../html/Tintuc.html">
+                        <img src="../img/news dt3.jpg" alt="" style="height: 172px; margin-left: -15px;">
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="../html/Tintuc.html">
+                    <p class="text-center text-danger pt-4">Top 10 mẫu điện thoại cao cấp, thời thượng đáng sở hữu nhất năm 2022</p>
+                    </a>
+                </div>
+    
+            </div>
 
-<div class="container my-5">
-    <h4 class="text-center" style="color: red;">Danh sách điện thoại bán chạy tại HMobile:</h4>
-    <br>
-    <div class="row bg-white" style="border-radius: 20px;padding-top: 30px;padding-bottom: 30px;">
-        <div class="it1 col-4 text-center justify-content-center">
-            <a href="../html/Iphone12Mini.html">
-                <img id="h1" src="../img/new1.png" style="height: 300px;">
-                <br><br>
-                <h5>Apple Iphone 12 Mini (Tím)</h5>
-                <p2  style="text-decoration: line-through; color: grey;">11.990.990 VNĐ</p2><br>
-                <p2 style="color: red;" >9.990.000 VNĐ</p2>
-            </a>
-        </div>
-        <div class="it1 col-4 text-center justify-content-center">
-            <a href="../html/S20FE.html">
-                <img id="h2" style="height: 300px;width: 300px;" src="../img/new3.png" >
-                <br><br>
-                <h5>SamSung Galaxy S20 FE</h5>
-                <p2 style="text-decoration: line-through; color: grey;">11.990.990 VNĐ</p2><br>
-                <p2 style="color: red;">9.990.000 VNĐ</p2>
-            </a>
-        </div>
-        <div class="it1 col-4 text-center justify-content-center">
-            <a href="../html/S23.html">
-                <img id="h3"  src="../img/new2.png" style="height: 300px;width: 300px; " >
-                <br><br>
-                <h5>SamSung Galaxy A23</h5>
-                <p2 style="text-decoration: line-through; color: grey;">11.990.990 VNĐ</p2><br>
-                <p2 style="color: red;">9.990.000 VNĐ</p2>
-            </a>
         </div>
     </div>
 </div>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-4 bg-white text-center pt-4" style="border: 5px inset ; border-color: rgb(255, 98, 0);">
+                <a href="../html/Ipad Pro 2020.html">
+                    <img src="../img/new1.png" alt="mt4" style="height: 200px;"> 
+                    <h4 class="font-weight-bold">IPHONE 12 Mini (Tím)</h4>
+                    <p2  style="text-decoration: line-through; color: grey;">17.990.990 VNĐ</p2><br>
+                    <p class="font-weight-normal" >13.900.000VNĐ</p>
+                </a>
+                <button type="button" class="btn btn-cart" 
+                onclick="addItemToCart('Apple Iphone 12 Mini (Tím)',13900000,'../img/new1.png');updatecart()">Thêm Vào Giỏ</button>
+            </div>
+           
+            <div class="col-md-4 bg-white text-center pt-4 " style="border: 5px inset ; border-color: rgb(255, 98, 0);">
+                <a href="../html/Ipad Pro 2020.html">
+                    <img src="../img/new3.png" alt="mt4" style="height: 200px;"> 
+                    <h4 class="font-weight-bold"> Samsung Galaxy S20 FE</h4>
+                    <p class="font-weight-normal" >9.990.000VNĐ</p>
+                </a>
+            </div>
+            <div class="col-md-4 bg-white text-center pt-4" style="border: 5px inset ; border-color: rgb(255, 98, 0);">
+                <a href="../html/Ipad Pro 2020.html">
+                    <img src="../img/new2.png" alt="mt4" style="height: 200px;"> 
+                    <h4 class="font-weight-bold">SAMSUNG GALAXY A23</h4>
+                    <p class="font-weight-normal" >9.990.000VNĐ</p>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-4 bg-white text-center " style="border: 5px inset ; border-color: rgb(255, 98, 0);">
+                <a href="../html/Ipad Pro 2020.html">
+                    <img src="../img/dt1.webp" alt="mt4" style="height: 270px;"> 
+                    <h4 class="font-weight-bold text-uppercase">IPHONE 13 PRO MAX</h4>
+                    <p class="font-weight-normal" >16.999.000VNĐ</p>
+                </a>
+            </div>
+            <div class="col-md-4 bg-white text-center pt-3" style="border: 5px inset ; border-color: rgb(255, 98, 0);">
+                <a href="../html/Ipad Pro 2020.html">
+                    <img src="../img/ip10.png" alt="mt4" style="height: 250px;"> 
+                    <h4 class="font-weight-bold text-uppercase"> IPHONE X</h4>
+                    <p class="font-weight-normal" >9.500.000VNĐ</p>
+                </a>
+            </div>
+            
+            <div class="col-md-4 bg-white text-center pt-1 " style="border: 5px inset ; border-color: rgb(255, 98, 0);">
+                <a href="../html/Ipad Pro 2020.html">
+                    <img src="../img/ip8.png" alt="mt4" style="height: 270px;"> 
+                    <h4 class="font-weight-bold">IPHONE 8</h4>
+                    <p class="font-weight-normal" >6.499.000VNĐ</p>
+                </a>
+                <a href="html/S23.html">
+                    <div class="img-product">
+                        <img id="h3"  src="img/newmt4.png" style="height: 300px;width: 300px; " >
+                    </div>
+                    <br>
+                    <div class="content-product">
+                        <h5>Apple Ipad Pro 2020</h5>
+                        <p2 style="text-decoration: line-through; color: grey;">17.990.990 VNĐ</p><br>
+                        <p2 style="color: red;" >14.500.000 VNĐ</p2>
+                        <div class="price">
+                            <span class="money" style="color: red;display: none;">14500000đ</span>
+                        </div><br>
+                    </div>
+                </a>
+                <button type="button" class="btn btn-cart" onclick="addItemToCart('Apple Ipad Pro 2020',14500000,'img/newmt4.png')">Thêm Vào Giỏ</button>
+            </div>
+            
+        </div>
+
+        <div class="row my-5">
+            <div class="col-md-4 bg-white text-center pt-4" style="border: 5px inset ; border-color: rgb(255, 98, 0);">
+                <a href="../html/Ipad Pro 2020.html">
+                    <img src="../img/oppo1.png" alt="mt4" style="height: 200px;"> 
+                    <h4 class="font-weight-bold text-uppercase"> OPPO RENO 8T </h4>
+                    <p class="font-weight-normal" >10.500.000VNĐ</p>
+                </a>
+            </div>
+    
+            <div class="col-md-4 bg-white text-center pt-4 " style="border: 5px inset ; border-color: rgb(255, 98, 0);">
+                <a href="../html/Ipad Pro 2020.html">
+                    <img src="../img/oppa2.png" alt="mt4" style="height: 200px;"> 
+                    <h4 class="font-weight-bold text-uppercase"> OPPO A95 </h4>
+                    <p class="font-weight-normal" >5.400.000VNĐ</p>
+                </a>
+            </div>
+            
+            <div class="col-md-4 bg-white text-center pt-4 " style="border: 5px inset ; border-color: rgb(255, 98, 0);">
+                <a href="../html/Ipad Pro 2020.html">
+                    <img src="../img/oppa3.png" alt="mt4" style="height: 200px;"> 
+                    <h4 class="font-weight-bold text-uppercase">OPPO RENO 7</h4>
+                    <p class="font-weight-normal" >6.499.000VNĐ</p>
+                </a>
+            </div>
+            
+        </div>
+</div>
+
 
 
 
 
  <!-- Footer -->
- <footer class="row text-center mt-5 p-3 fixed-bottom" style="background-color: black;">
-    <div class="col-5">
+ <footer class="row text-center mt-5" style="background-color: black;">
+    <div class="col-md-5">
         <h3 class="text-white">Liên Hệ Chúng Tôi:</h3>
         <a href="tel:0123456789" style="text-decoration: none;color: rgb(253, 253, 253);">Tel: 012.3456.789</a><br>
         <p2 class="text-white">1 Nguyễn Văn Bảo Phường 5 Gò Vấp</p2>
     </div>
-    <div class="col-4">
+    <div class="col-md-4">
         <a class="text-white" href="#">Chính Sách Bảo Hành</a><br>
         <a class="text-white" href="#">Tin Tức</a><br>
         <a class="text-white" href="#">Tuyển Dụng</a><br>
         <a class="text-white" href="#">Góp Ý, Khiếu Nại</a>
     </div>
-    <div class="col-3">
+    <div class="col-md-3">
         <a href="https://www.facebook.com/" >
              <img src="../img/fb icon.png" style="height: 70px;">
         </a>
     </div>
 </footer>
+
 
 <!-- Tạo modal đâng nhập -->
 <div class="modal" id="formdn">
@@ -170,12 +299,13 @@
                 <div class="row">
                     <label for="" class="col-3"> Mật khẩu</label>
                     <div class="col-9"> 
-                        <input type="text" class="form-control" id="pass" placeholder="Mật khẩu" >
+                        <input type="password" class="form-control" id="pass" placeholder="Mật khẩu" >
+                        
                         <span class="text-danger" id="ermk">(*)</span>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <input type="button" value="Xác nhận" class="btn btn-success ">
+                    <input type="button" value="Xác nhận" class="btn btn-success" id="btnSignIn" onclick="xacnhan()">
                 </div>
             </form>
             </div>
@@ -240,7 +370,7 @@
                     <div class="row form-group">
                         <label for="" class="col-3">Mật Khẩu</label>
                         <div class="col-9">
-                        <input type="text" class="form-control" id="password" onblur="ktpass();">
+                        <input type="password" class="form-control" id="password" onblur="ktpass();">
                         <span id="erpassword" class="text-danger">(*)</span>
                         </div>
                     </div>
@@ -278,5 +408,34 @@
             
         </div>
     </div>
+        <!-- cart -->
+    <div id="myModal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <div class="modal-header" id="modal-header">
+                <h5 class="modal-title">Giỏ Hàng</h5>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                    <span class="cart-price cart-header cart-column">Giá</span>
+                    <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                </div>
+                <div class="cart-items" id="cart-items">
+                    
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Tổng Cộng:</strong>
+                    <span class="cart-total-price">0 VND</span>
+                </div>
+            </div>
+    
+            <div class="modal-footer" id="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-secondary close-footer">Đóng</button>
+                <button type="button" class="btn btn-primary order">Thanh Toán</button>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="../js/Web.js"></script>
 </html>

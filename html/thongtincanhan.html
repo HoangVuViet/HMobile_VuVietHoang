@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/HMobile.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <link rel="shortcut icon" href="../img/logo.png" >
+
+    <title>Thông Tin Cá Nhân</title>
+</head>
+
+<body>
+    
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-md navbar-light bg-dark ">
+
+        <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" style="height: 40px;"></a>
+    
+        <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+    
+        <span class="navbar-toggler-icon"></span>
+    
+        </button>
+    
+    <div class="collapse navbar-collapse justify-content-between" id="nav">
+    
+        <ul class="navbar-nav">
+    
+            <li class="nav-item" >
+    
+                 <a class="nav-link text-light font-weight-bold px-3" href="../index.html">TRANG CHỦ</a>
+    
+            </li>
+    
+            <li class="nav-item" >
+    
+                <a class="nav-link text-light font-weight-bold px-3 " href="../html/DienThoai.html">ĐIỆN THOẠI</a>
+    
+                    <!-- <div class="dropdown-menu">
+    
+                        <a class="dropdown-item" href="#">Fast Food</a>
+    
+                        <a class="dropdown-item" href="#">Lunch</a>
+    
+    
+                    </div> -->
+    
+            </li>
+            <li class="nav-item">
+    
+                <a class="nav-link text-light font-weight-bold px-3" href="../html/MayTinhBang.html">MÁY TÍNH BẢNG</a>
+    
+            </li>
+            <li class="nav-item">
+    
+                <a class="nav-link text-light font-weight-bold px-3" href="../html/Tintuc.html">TIN TỨC</a>
+    
+            </li>
+    
+            <li class="nav-item">
+    
+                <a class="nav-link text-light font-weight-bold px-3" href="../html/about us.html">ABOUT US</a>
+    
+            </li>
+    
+            
+    
+        </ul>
+    
+    
+    <!-- Search bar -->
+    
+    <form class="form-inline ml-3">
+    
+        <div class="input-group">
+    
+            <input type="text" class="form-control " placeholder="Search" >
+    
+            <button type="submit"><i class="fa fa-search"></i>Go</button>
+    
+        </div>
+    
+    </form>
+    <a href="#" data-target="#formdn" data-toggle="modal" id="btnDemo1">Đăng Nhập</a>
+    <div id="thongtincanhan" style="display: none;" >
+        <ul>
+            <li style="list-style-type: none;" > <a style="color: white;" href="../html/thongtincanhan.html"> Thông tin</a></li>
+            <li style="list-style-type: none;" id="dangxuat" onclick="dangxuat()"><a class="text-white" href="TrangChu.html">Đăng xuất</a>/</li>
+        </ul>
+    </div>
+
+    </div>
+    </nav>
+
+  <!-- content   -->
+    <div class="container-fluid my-5" >
+        <div class="table-responsive-md">
+            <table class="table table-dark table-striped" id="tableInfoUser">
+                <h2 class="text-white text-uppercase">Thông Tin Cá Nhân</h2>
+                    <tr>
+                        <th>Họ Tên</th>
+                        <th>Email</th>
+                        <th>SDT</th>
+                        <th>Ngày Sinh</th>
+                        <th>Tên Đăng Nhập</th>
+                        <th>Mật Khẩu</th>
+                    </tr>
+                    <tr>
+                        <th>Việt Hoàng</th>
+                        <th>hoang123@gmail.com</th>
+                        <th>0123456789</th>
+                        <th>11/11/2002</th>
+                        <th>hoang123</th>
+                        <th>Viethoang123</th>
+                    </tr>
+                        
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- Footer -->
+    
+</div>
+<footer class="row text-center" style=" position: fixed; bottom: 0px; width: 100%;margin: 0;
+                     background-color: black; padding-bottom: 30px; padding-top: 30px;">
+        <div class="col-md-5">
+            <h3 class="text-white">Liên Hệ Chúng Tôi:</h3>
+            <a href="tel:0123456789" style="text-decoration: none;color: rgb(253, 253, 253);">Tel: 012.3456.789</a><br>
+            <p2 class="text-white">1 Nguyễn Văn Bảo Phường 5 Gò Vấp</p2>
+        </div>
+        <div class="col-md-4">
+            <a class="text-white" href="#">Chính Sách Bảo Hành</a><br>
+            <a class="text-white" href="#">Tin Tức</a><br>
+            <a class="text-white" href="#">Tuyển Dụng</a><br>
+            <a class="text-white" href="#">Góp Ý, Khiếu Nại</a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.facebook.com/" >
+                 <img src="../img/fb icon.png" style="height: 70px;">
+            </a>
+        </div>
+    </footer>
+ <!-- Tạo modal đâng nhập -->
+ <div class="modal" id="formdn">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                    <h4 class="text-info">
+                        THÔNG TIN ĐĂNG NHẬP
+                    </h4>
+                    <button class="btn close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                <div class="row">
+                    <label for="" class="col-3"> Tài Khoản</label>
+                    <div class="col-9"> 
+                        <input type="text" class="form-control" id="taikhoan" placeholder="Tên đăng nhập" >
+                        <span class="text-danger" id="ertk">(*)</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="" class="col-3"> Mật khẩu</label>
+                    <div class="col-9"> 
+                        <input type="password" class="form-control" id="pass" placeholder="Mật khẩu" >
+                        
+                        <span class="text-danger" id="ermk">(*)</span>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="button" value="Xác nhận" class="btn btn-success" id="btnSignIn" onclick="xacnhan()">
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                    <p class="col-12 text-center">Nếu chưa có tài khoản bấm vào <a href="#" data-dismiss="modal" data-target="#formdk" data-toggle="modal">đây</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- tạo modal dăng ký -->
+<div class="modal" id="formdk">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="text-info">
+                    THÔNG TIN ĐĂNG KÝ TÀI KHOẢN
+                </h4>
+                <button class="btn close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <label for="" class="col-3">Họ và Tên</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="hoten" placeholder="Ho va ten..." onblur="kthoten()">
+                        <span id="erhoten" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Email</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="email" placeholder="Email..." onblur="ktemail();">
+                        <span id="eremail" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">SĐT</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="sdt" placeholder="SĐT" onblur="ktsdt();">
+                        <span id="ersdt" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Ngày sinh</label>
+                        <div class="col-9">
+                        <input type="date" class="form-control" id="date" onblur="ktdate();">
+                        <span id="erdate" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Tên Đăng Nhập</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="tdn" onblur="kttk();">
+                        <span id="ertdn" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Mật Khẩu</label>
+                        <div class="col-9">
+                        <input type="password" class="form-control" id="password" onblur="ktpass();">
+                        <span id="erpassword" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <label for="" class="col-3">Xác Nhận Mật Khẩu</label>
+                        <div class="col-9">
+                        <input type="text" class="form-control" id="repassword" onblur="ktrepass();">
+                        <span id="errepassword" class="text-danger">(*)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="row form-group">
+                        <label for="" class="col-3 text-right">Gioi tinh</label>
+                        <div class="col-9">
+                            <input type="radio" name='gioitinh'> Nam
+                            <input type="radio" name='gioitinh'> Nu
+
+                        </div>
+                    </div>
+                    
+                    </div>
+                        <div class="row form-group">
+                            <div class="col-12 text-center">
+                                <input type="button" class="btn btn-success" value="Dang ky" onclick="ketqua();">
+                                <input type="reset" class="btn btn-dark" value="Reset">
+                            </div>
+                        </div>
+
+                </form>
+                        <div class="modal-footer">
+                            <input type="button" class="btn btn-danger" data-dismiss="modal" value="Huỷ">
+                        </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+<script src="../js/Web.js"></script>
+<script src="../js/thongtincanhan.js"></script>
+</html>
