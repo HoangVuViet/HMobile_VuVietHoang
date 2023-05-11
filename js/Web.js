@@ -212,7 +212,7 @@ function addItemToCart(title, price, img) {
   cartRow.classList.add('cart-row')
   var cartItems = document.getElementsByClassName('cart-items')[0]
   var cart_title = cartItems.getElementsByClassName('cart-item-title')
-  // Nếu title của sản phẩm bằng với title mà bạn thêm vao giỏ hàng thì sẽ thông cho user.
+  // Nếu title của sản phẩm bằng với title thêm vao giỏ hàng thì sẽ thông báobáo cho user.
   for (var i = 0; i < cart_title.length; i++) {
     if (cart_title[i].innerText == title) {
       alert('Sản Phẩm Đã Có Trong Giỏ Hàng')
@@ -258,5 +258,5 @@ function updatecart() {
     total = total + (price * quantity)
   }
   document.getElementsByClassName("cart-total-price")[0].innerText = total + 'VNĐ'
-  // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
+  // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên sử dụng [0].
 }
