@@ -10,7 +10,7 @@ window.onload = () => {
 
 function kthoten() {
   let hoten1 = document.getElementById("hoten").value;
-  let pattern = /(^[A-Z]{1}[a-z]{1,10}).*$/;
+  let pattern = /(^[A-Z]{1})([a-z]+)(\s[A-Z]{1}([a-z]+))$/;
   if (pattern.test(hoten1)) {
     document.getElementById("erhoten").innerHTML = "*";
     return true;
